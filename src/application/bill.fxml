@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.billController">
+   <StackPane style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <AnchorPane>
+            <children>
+                    <Label layoutX="28.0" layoutY="34.0" text="Billing :" AnchorPane.leftAnchor="28.0">
+                        <font>
+                            <Font name="HoloLens MDL2 Assets" size="22.0" />
+                        </font>
+                    </Label>
+                    <Line endX="1072.5" layoutX="129.0" layoutY="85.0" startX="-100.0" AnchorPane.leftAnchor="28.5" />
+                    <TextField fx:id="reportsearch1" layoutX="35.0" layoutY="128.0" prefHeight="35.0" prefWidth="798.0" AnchorPane.leftAnchor="35.0" />
+                    <JFXButton layoutX="899.0" layoutY="121.0" onAction="#searchbill" prefHeight="46.0" prefWidth="171.0" stylesheets="@interior.css" text="Search Customer" textFill="WHITE" AnchorPane.leftAnchor="899.0">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </JFXButton>
+                    <Label layoutX="42.0" layoutY="189.0" text="Start Date :" AnchorPane.leftAnchor="42.0">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <TableView fx:id="table_report1" layoutX="23.0" layoutY="243.0" prefHeight="495.0" prefWidth="1193.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="243.0">
+                        <columns>
+                            <TableColumn fx:id="report_customer1" prefWidth="75.0" text="Customer Name" />
+                            <TableColumn fx:id="report_noofjar1" prefWidth="75.0" text="No of jar" />
+                            <TableColumn fx:id="report_typeofjar1" prefWidth="75.0" text="Type of jar" />
+                            <TableColumn fx:id="report_amount1" prefWidth="75.0" text="Amount" />
+                        </columns>
+                        <columnResizePolicy>
+                            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                        </columnResizePolicy>
+                    </TableView>
+                    <Label layoutX="364.0" layoutY="762.0" text="Balance Pending :" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="365.0">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="pending" layoutX="512.0" layoutY="760.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="512.0" />
+                    <Label layoutX="382.0" layoutY="189.0" text="To :" AnchorPane.leftAnchor="382.0">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <JFXButton layoutX="1025.0" layoutY="746.0" onAction="#printbill" prefHeight="46.0" prefWidth="171.0" stylesheets="@interior.css" text="Print Bill" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="7.0">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </JFXButton>
+                    <JFXDatePicker fx:id="reportstartdate1" layoutX="143.0" layoutY="187.0" AnchorPane.leftAnchor="143.0" />
+                    <JFXDatePicker fx:id="reportenddate1" layoutX="429.0" layoutY="187.0" AnchorPane.leftAnchor="429.0" />
+                    <Label layoutX="27.0" layoutY="761.0" text="Total Amount :" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="27.0">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="billamount1" layoutX="155.0" layoutY="759.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="155.0" />
+                    <Label layoutX="713.0" layoutY="761.0" text="Paid Amount :" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="713.0">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="paidamount" layoutX="828.0" layoutY="758.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="828.0" />
+            </children>
+         </AnchorPane>
+      </children>
+   </StackPane>
+</AnchorPane>

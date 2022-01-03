@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootpane" alignment="center" hgap="10" style="-fx-background-color: #19CEEB;" stylesheets="@login.css" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <AnchorPane prefHeight="692.0" prefWidth="1243.0" style="-fx-background-color: #19CEEB;" styleClass="border" stylesheets="@login.css" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <children>
+            <StackPane layoutX="525.0" layoutY="70.0" prefHeight="502.0" prefWidth="639.0">
+               <children>
+                  <Pane fx:id="pnSignup" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="641.0" style="-fx-background-color: #ffffff;">
+                     <children>
+
+                        <FontAwesomeIconView glyphName="" layoutX="42.0" layoutY="230.0" size="30" text="" />
+
+
+                        <FontAwesomeIconView glyphName="KEY" layoutX="42.0" layoutY="297.0" size="30" />
+
+                        <Label layoutX="245.0" layoutY="38.0" text="SIGN UP">
+                           <font>
+                              <Font name="HoloLens MDL2 Assets" size="38.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtemail" layoutX="80.0" layoutY="139.0" prefHeight="31.0" prefWidth="213.0" promptText="Email" />
+                        <JFXTextField fx:id="txtusername" layoutX="80.0" layoutY="204.0" prefHeight="31.0" prefWidth="213.0" promptText="Username" />
+                        <JFXPasswordField fx:id="textpassword" layoutX="80.0" layoutY="270.0" prefHeight="31.0" prefWidth="213.0" promptText="Password" />
+                        <JFXTextField fx:id="txtpan" layoutX="80.0" layoutY="335.0" prefHeight="31.0" prefWidth="213.0" promptText="Pan No" />
+                        <JFXTextField fx:id="txtgst" layoutX="383.0" layoutY="139.0" prefHeight="31.0" prefWidth="213.0" promptText="GST No" />
+                        <JFXComboBox fx:id="securityQ" layoutX="383.0" layoutY="204.0" prefHeight="31.0" prefWidth="213.0" promptText="Security Question ?" />
+                        <JFXTextField fx:id="txtSecanswer" layoutX="383.0" layoutY="270.0" prefHeight="31.0" prefWidth="213.0" promptText="Answer" />
+                        <JFXButton fx:id="setsignup" layoutX="229.0" layoutY="397.0" onAction="#signupdb" prefHeight="63.0" prefWidth="226.0" styleClass="btn" stylesheets="@login.css" text="SIGN UP" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btngoback" ellipsisString="" layoutX="14.0" layoutY="14.0" onAction="#handleClicksinlogin" prefHeight="39.0" prefWidth="48.0" styleClass="btn" stylesheets="@login.css" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ARROW_LEFT" onDragDetected="#handleClicksinlogin" size="30" />
+                           </graphic>
+                        </JFXButton>
+                        <FontAwesomeIconView glyphName="QUESTION_CIRCLE" layoutX="342.0" layoutY="230.0" size="30" />
+                        <FontAwesomeIconView glyphName="CREDIT_CARD" layoutX="342.0" layoutY="165.0" size="30" />
+
+                        <FontAwesomeIconView glyphName="LIGHTBULB_ALT" layoutX="349.0" layoutY="296.0" size="30" />
+
+                        <MaterialDesignIconView glyphName="GMAIL" layoutX="42.0" layoutY="172.0" size="30" wrappingWidth="23.571425506845117" />
+                        <FontAwesomeIconView glyphName="CREDIT_CARD" layoutX="42.0" layoutY="361.0" size="30" />
+                        <JFXCheckBox fx:id="foradmin" layoutX="355.0" layoutY="340.0" text="Admin" />
+                        <JFXCheckBox fx:id="foruser" layoutX="455.0" layoutY="340.0" text="User" />
+                     </children>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Pane>
+                  <Pane fx:id="pnLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="642.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <JFXTextField fx:id="loginusername" layoutX="354.0" layoutY="124.0" prefHeight="31.0" prefWidth="234.0" promptText="Username" />
+                        <JFXPasswordField fx:id="loginpassword" layoutX="354.0" layoutY="197.0" prefHeight="31.0" prefWidth="234.0" promptText="Password" />
+                        <JFXCheckBox fx:id="clickpassword" layoutX="321.0" layoutY="262.0" onAction="#showpassword" text="Show Password" />
+                        <FontAwesomeIconView glyphName="LOCK" layoutX="102.0" layoutY="266.0" size="200" wrappingWidth="139.468736872077" />
+                        <FontAwesomeIconView glyphName="USER" layoutX="309.0" layoutY="151.0" size="30" text="" />
+                        <FontAwesomeIconView glyphName="KEY" layoutX="309.0" layoutY="223.0" size="30" />
+                        <JFXButton fx:id="btnLogin" layoutX="339.0" layoutY="337.0" onAction="#logindb" prefHeight="63.0" prefWidth="226.0" styleClass="btn" stylesheets="@login.css" text="LOGIN" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="128.0" layoutY="297.0" text="LOGIN">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="371.0" layoutY="415.0" mnemonicParsing="false" onAction="#handleforgpass" prefHeight="31.0" prefWidth="161.0" style="-fx-background-color: #ffffff;" text="Forget Password ? " textFill="#009dff" />
+                        <Label fx:id="passwordLabel" layoutX="471.0" layoutY="262.0" prefHeight="21.0" prefWidth="121.0" />
+                        <JFXCheckBox fx:id="areyouadmin" layoutX="322.0" layoutY="298.0" text="Are you admin ?" />
+                     </children>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Pane>
+               </children>
+            </StackPane>
+            <ImageView fitHeight="271.0" fitWidth="264.0" layoutX="129.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: #;">
+               <image>
+                  <Image url="@../resources/1.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="296.0" layoutY="186.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSignup" layoutX="147.0" layoutY="416.0" onAction="#handleClicksinlogin" prefHeight="63.0" prefWidth="226.0" styleClass="btn" stylesheets="@login.css" text="SIGN UP" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

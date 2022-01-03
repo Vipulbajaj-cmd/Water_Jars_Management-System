@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="617.0" prefWidth="881.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboardController">
+
+
+
+
+
+   <children>
+      <Pane layoutX="56.0" layoutY="50.0" prefHeight="518.0" prefWidth="770.0" style="-fx-border-width: 5; -fx-border-color: #8a0473; -fx-border-radius: 15;">
+         <children>
+            <Label layoutX="478.0" layoutY="40.0" prefHeight="61.0" prefWidth="181.0" text="Contact Developer" textFill="#8a0473">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="517.0" layoutY="203.0" prefHeight="39.0" prefWidth="104.0" text="Vipul Bajaj" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="517.0" layoutY="95.0" prefHeight="39.0" prefWidth="111.0" text="Kasim Sache" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="513.0" layoutY="125.0" prefHeight="39.0" prefWidth="111.0" text=" 8329431415" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="455.0" layoutY="152.0" prefHeight="39.0" prefWidth="234.0" text=" itskasimsache@gmail.com" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="373.0" prefHeight="39.0" prefWidth="174.0" text="CEO Nitin Vasekar" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="410.0" prefHeight="39.0" prefWidth="111.0" text="8956056254" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="291.0" fitWidth="318.0" layoutX="65.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/company_logo.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="125.0" layoutY="333.0" prefHeight="35.0" prefWidth="181.0" text="Defension.pvt.ltd" textFill="#8a0473">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="498.0" layoutY="289.0" prefHeight="39.0" prefWidth="143.0" text="Praful Deoghare" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="491.0" layoutY="376.0" prefHeight="39.0" prefWidth="161.0" text="Sudarshan Varale" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="458.0" layoutY="240.0" prefHeight="39.0" prefWidth="223.0" text=" vipulbajaj77@gmail.com" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="447.0" layoutY="324.0" prefHeight="39.0" prefWidth="243.0" text="prafuldeoghare@gmail.com" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="452.0" layoutY="411.0" prefHeight="39.0" prefWidth="234.0" text=" itskasimsache@gmail.com" textAlignment="CENTER" textFill="#8a0473">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

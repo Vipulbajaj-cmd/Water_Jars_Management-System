@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1580.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboardController">
+   <children>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1570.0" style="-fx-background-color: #19CEEB;">
+         <AnchorPane prefHeight="850.0" prefWidth="273.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                    <VBox prefHeight="954.0" prefWidth="283.0" style="-fx-background-color: #19CEEB;" styleClass="dashboard" stylesheets="@interior.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <children>
+                     <AnchorPane>
+                        <children>
+                                    <ImageView fitHeight="94.0" fitWidth="84.0" layoutX="8.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.277778625488281" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="18.0">
+                                        <image>
+                                            <Image url="@../resources/1.jpeg" />
+                                        </image>
+                                    </ImageView>
+                                    <Label layoutX="95.0" layoutY="11.0" prefHeight="63.0" prefWidth="170.0" text="GRANTHI" textFill="WHITE" AnchorPane.rightAnchor="8.0">
+                                        <font>
+                                            <Font name="System Bold" size="36.0" />
+                                        </font>
+                              <padding>
+                                 <Insets top="10.0" />
+                              </padding>
+                                    </Label>
+                                    <Label alignment="TOP_LEFT" layoutX="125.0" layoutY="64.0" prefHeight="53.0" prefWidth="125.0" text="AQUA" textFill="WHITE" AnchorPane.rightAnchor="8.0">
+                                        <font>
+                                            <Font name="System Bold" size="36.0" />
+                                        </font>
+                                    </Label>
+                        </children>
+                     </AnchorPane>
+                            <Button fx:id="btnStudents" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="249.0" minHeight="80.0" minWidth="302.0" mnemonicParsing="false" onAction="#handleClicks" stylesheets="@interior.css" text="Customers" textFill="WHITE">
+                                <opaqueInsets>
+                                    <Insets />
+                                </opaqueInsets>
+                                <padding>
+                                    <Insets left="60.0" />
+                                </padding>
+                                <font>
+                                    <Font name="System Bold" size="19.0" />
+                                </font>
+                                <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="20" />
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnTeachers" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="146.0" minHeight="80.0" minWidth="302.0" mnemonicParsing="false" onAction="#handleClicks" stylesheets="@interior.css" text="Daily Orders" textFill="WHITE">
+                                <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" size="20" />
+                                </graphic>
+                                <opaqueInsets>
+                                    <Insets />
+                                </opaqueInsets>
+                                <padding>
+                                    <Insets left="60.0" />
+                                </padding>
+                                <font>
+                                    <Font name="System Bold" size="19.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="btnFees" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="234.0" minHeight="80.0" minWidth="302.0" mnemonicParsing="false" onAction="#handleClicks" stylesheets="@interior.css" text="Billing" textFill="WHITE">
+                                <opaqueInsets>
+                                    <Insets />
+                                </opaqueInsets>
+                                <padding>
+                                    <Insets left="60.0" />
+                                </padding>
+                                <font>
+                                    <Font name="System Bold" size="19.0" />
+                                </font>
+                                <graphic>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="CURRENCY_USD" size="20" />
+                                </graphic>
+                            </Button>
+                            <Button fx:id="btnUsers" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="322.0" minHeight="80.0" minWidth="302.0" mnemonicParsing="false" onAction="#handleClicks" stylesheets="@interior.css" text="Report" textFill="WHITE">
+                                <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" size="20" />
+                                </graphic>
+                                <opaqueInsets>
+                                    <Insets />
+                                </opaqueInsets>
+                                <padding>
+                                    <Insets left="60.0" />
+                                </padding>
+                                <font>
+                                    <Font name="System Bold" size="19.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="410.0" minHeight="80.0" minWidth="302.0" mnemonicParsing="false" onAction="#handleClicks" stylesheets="@interior.css" text="Settings" textFill="WHITE">
+                                <opaqueInsets>
+                                    <Insets />
+                                </opaqueInsets>
+                                <padding>
+                                    <Insets left="60.0" />
+                                </padding>
+                                <font>
+                                    <Font name="System Bold" size="19.0" />
+                                </font>
+                                <graphic>
+                                    <MaterialDesignIconView fill="WHITE" glyphName="SETTINGS" size="20" />
+                                </graphic>
+                            </Button>
+                              <JFXButton graphicTextGap="10.0" onAction="#logout" prefHeight="80.0" prefWidth="302.0" style="-fx-background-color: #19CEEB #19CEEB #19CEEB;" text="Logout" textFill="WHITE">
+                                  <font>
+                                      <Font name="System Bold" size="20.0" />
+                                  </font>
+                        <graphic>
+                           <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" layoutX="10.0" size="20" />
+                        </graphic>
+                        <padding>
+                           <Insets left="-80.0" />
+                        </padding>
+                              </JFXButton>
+                              <JFXButton fx:id="btncontact" graphicTextGap="10.0" onAction="#contact" prefHeight="80.0" prefWidth="302.0" style="-fx-background-color: #19CEEB #19CEEB #19CEEB;" text="Contact Developers" textFill="WHITE">
+                                  <font>
+                                      <Font name="System Bold" size="18.0" />
+                                  </font>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="20.0" />
+                        </padding>
+                        <graphic>
+                           <FontAwesomeIconView fill="WHITE" glyphName="COMMENTING" size="20" />
+                        </graphic>
+                              </JFXButton>
+                        </children>
+                    </VBox>
+            </children>
+         </AnchorPane>
+         <StackPane layoutX="319.0" layoutY="14.0" prefHeight="822.0" prefWidth="1252.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="319.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="14.0">
+            <children>
+               <AnchorPane fx:id="masterpane1" style="-fx-background-color: #19CEEB;">
+                  <children>
+                     <AnchorPane layoutX="163.0" layoutY="63.0" prefHeight="694.0" prefWidth="912.0" style="-fx-background-color: #19CEEB;" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="163.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="63.0">
+                        <children>
+                           <AnchorPane layoutX="88.0" layoutY="63.0" prefHeight="581.0" prefWidth="755.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="88.0" AnchorPane.topAnchor="63.0">
+                              <children>
+                                 <Label layoutX="471.0" layoutY="43.0" prefHeight="93.0" prefWidth="206.0" text="Contact Developer" textFill="#8a0473" AnchorPane.bottomAnchor="445.0" AnchorPane.leftAnchor="471.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="43.0">
+                                    <font>
+                                       <Font name="System Bold" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="570.0" layoutY="207.0" text="Vipul Bajaj" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="281.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="207.0">
+                                    <font>
+                                       <Font name="HoloLens MDL2 Assets" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="554.0" layoutY="81.0" prefHeight="93.0" prefWidth="228.0" text="Kasim Sache" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="407.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="81.0">
+                                    <font>
+                                       <Font name="HoloLens MDL2 Assets" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="560.0" layoutY="149.0" text=" 8329431415" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="339.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="149.0">
+                                    <font>
+                                       <Font name="System Bold" size="18.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="447.0" layoutY="410.0" prefHeight="93.0" prefWidth="259.0" text="sudarshanvarale@gmail.com" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="410.0">
+                                    <font>
+                                       <Font name="System Bold" size="18.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="131.0" layoutY="372.0" text="CEO Nitin Vasekar" textAlignment="CENTER" textFill="#8a0473" AnchorPane.leftAnchor="131.0">
+                                    <font>
+                                       <Font name="System Bold" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="161.0" layoutY="412.0" text="8956056254" textAlignment="CENTER" textFill="#8a0473" AnchorPane.leftAnchor="161.0">
+                                    <font>
+                                       <Font name="System Bold" size="18.0" />
+                                    </font>
+                                 </Label>
+                                 <ImageView fitHeight="228.0" fitWidth="259.0" layoutX="98.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="261.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="421.46551513671875" AnchorPane.topAnchor="92.0">
+                                    <image>
+                                       <Image url="@../resources/company_logo.jpeg" />
+                                    </image>
+                                 </ImageView>
+                                 <Label layoutX="125.0" layoutY="331.0" text="Defenson.pvt.ltd" textFill="#8a0473" AnchorPane.leftAnchor="125.0">
+                                    <font>
+                                       <Font name="HoloLens MDL2 Assets" size="24.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="531.0" layoutY="297.0" text="Praful Deoghare" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="297.0">
+                                    <font>
+                                       <Font name="HoloLens MDL2 Assets" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="522.0" layoutY="376.0" text="Sudarshan Varale" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="376.0">
+                                    <font>
+                                       <Font name="HoloLens MDL2 Assets" size="20.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="448.0" layoutY="240.0" prefHeight="81.0" prefWidth="233.0" text=" vipulbajaj77@gmail.com" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="240.0">
+                                    <font>
+                                       <Font name="System Bold" size="18.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="478.0" layoutY="330.0" prefHeight="93.0" prefWidth="249.0" text="prafuldeoghare@gmail.com" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="330.0">
+                                    <font>
+                                       <Font name="System Bold" size="18.0" />
+                                    </font>
+                                 </Label>
+                                 <Label layoutX="446.0" layoutY="113.0" prefHeight="81.0" prefWidth="243.0" text=" itskasimsache@gmail.com" textAlignment="CENTER" textFill="#8a0473" AnchorPane.bottomAnchor="375.0" AnchorPane.leftAnchor="478.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="113.0">
+                                    <font>
+                                       <Font name="System Bold" size="18.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                           </AnchorPane>
+                        </children>
+                     </AnchorPane>
+                  </children>
+               </AnchorPane>
+               <StackPane fx:id="masterpane" prefHeight="832.0" prefWidth="1420.0" style="-fx-background-color: #ffffff;" />
+            </children>
+         </StackPane>
+            </AnchorPane>
+          </children>
+</StackPane>

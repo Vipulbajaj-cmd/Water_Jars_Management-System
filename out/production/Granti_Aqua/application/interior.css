@@ -1,0 +1,15 @@
+.button{
+    -fx-background-color: #19CEEB;
+}
+.button:hover{
+    -fx-background-color: #454545;
+}
+.dashboard{
+      -fx-background-color:#19CEEB;
+       -fx-border-color: #ffffff;
+       -fx-border-width: 5px;
+}
+.searchbar{
+     -fx-border-color: #000000;
+     -fx-border-width: 2px;
+}

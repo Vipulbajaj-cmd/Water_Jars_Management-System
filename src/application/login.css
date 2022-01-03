@@ -1,0 +1,24 @@
+.btn{
+    -fx-background-color: #A7FF19;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+.btn:hover{
+    -fx-opacity: 0.6;
+}
+.sidebox{
+    -fx-background-color: #000000;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+.rightbox{
+    -fx-background-color:  #ffffff;
+}
+
+.border{
+ -fx-background-color: #000000;
+ -fx-border-color: #ffffff;
+ -fx-border-width: 5px;
+}
+

@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Granti_Aqua:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Granti_Aqua_jar</output-path>
+    <root id="archive" name="Granti_Aqua.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Granti_Aqua" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/water_library/jfoenix-8.0.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jasperreports-6.16.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/commons-collections4-4.2/commons-collections4-4.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/water_library/controlsfx-8.40.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/barcode4j-2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/com-jaspersoft-ireport-components.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/com-jaspersoft-ireport-jasperserver.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/com-jaspersoft-ireport.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/com-jaspersoft-jrx.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/commons-beanutils-1.8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/commons-collections-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/commons-digester-2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/commons-javaflow-20060411.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/commons-logging-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/dom4j-1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/groovy-all-2.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/iText-2.1.7.js2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/jasper-compiler-jdt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/jaspersoft/jaspersoft/log4j-1.2.15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/water_library/fontawesomefx-8.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/water_library/mysql-connector-java-8.0.22.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
